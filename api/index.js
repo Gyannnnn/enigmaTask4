@@ -20,7 +20,9 @@ mongoose
   });
 
 // routes import
-
+app.get("/",(req,res)=>{
+  res.send("Hello World")
+}
 app.use(express.json());
 const authRoutes = require("./Routes/auth.routes.js");
 
